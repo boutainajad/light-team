@@ -177,7 +177,7 @@ button{
 
 .center--card{
     position: relative;
-    height: 20rem;
+    
     height: 25rem;
     transform: rotate(0deg);
     z-index: 4;
@@ -240,7 +240,7 @@ button{
 }
 .card_teams{
     width: 20rem;
-    height: 50%;
+    height: 29rem;
     border: 2px solid black;
     position: absolute;
     background-color: black;
