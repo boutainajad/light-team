@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+    width: 100%;
+    background-color: #161515;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.logo
+{
+     font-family: "Metal Mania", system-ui;
+     font-weight: 400;
+     font-style: normal;
+    font-size: x-large;
+}
+.top-nav{
+    display: flex;
+    justify-content: center;
+    gap :55rem;
+    padding: 15px;
+}
+#Search{
+    border-radius: 30px;
+    position: relative;
+    width: 300px;
+    height: 20px;
+    background-color: #161515;
+    padding: 5px;
+    color: #FFFFFF;
+}
+#icon-nav{
+    position: relative;
+    right:10%;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.CHAMPION{
+    background-color: #161515;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 30rem;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.team{
+    width: 50%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 70px;
+    border: 1px solid #CAA8F5;
+    border-radius: 16px;
+}
+.CHAMPION .team button{
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background: #161515;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+
+}
+.date{
+     font-family: "Metal Mania", system-ui;
+}
+.time{
+    border-right: 1px solide #CAA8F5;
+}
