@@ -4,6 +4,8 @@
 }
 body{
     font-size: 10px;
+    font-family: 'Orbitron', sans-serif;
+
 }
 .boddy__home{
     /* background: url(screen/backgroundvid.mp4); */
@@ -155,6 +157,7 @@ button{
 .main--cards--games{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -168,6 +171,8 @@ button{
     border-radius: 20px;
     color: white;
     padding: 10px;
+    box-shadow: 0 0  20px rgba(255, 255, 255, 0.5);
+
 }
 
 .center--card{
@@ -219,6 +224,7 @@ button{
 .main--cards--teams{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
@@ -226,9 +232,11 @@ button{
 .cards__teams{
     height: 34rem;
     width: 80%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 .card_teams{
     width: 20rem;
@@ -241,6 +249,7 @@ button{
     color: white;
     /* z-index: 2; */
     position: absolute;
+    box-shadow: 0 0  20px rgba(255, 255, 255, 0.5);
 }
 
 .card_teams img{
@@ -384,9 +393,258 @@ button{
     border-radius: 100%;
 }
 
-@media (max-width: 480px){
+
+/* page of dashboard */
+
+.main--cards--dashboard{
+    width: 100%;
+    height: 44rem;
+    border: 1px solid white;
+    display: flex;
+    
+    background-color: black;
+}
+.sidebar{
+    width: 30%;
+    height: 100%;
+    border: 1px solid white;
+
+}
+.title--dashborard{
+    height: 10%;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+
+}
+.box--questions{
+    height: 40%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5em;
+}
+.box--questions h3{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+.box--sponsore{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sponse{
+    width: 8em;
+    height: 8em;
+    background-color: white;
+    border-radius: 100%;
+}
+.box--butoon-dash{
+    height:  10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box--butoon-dash button{
+    margin: 0;
+    background-color: blueviolet;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.card--sponse{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+.second--page--dashboad{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    
+}
+.title--dashborard--secon-dash{
+    height: 10%;
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: large;
+}
+.draw--dashboard{
+    height: 60%;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.statistique--dashboard{
+    height: 30%;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+.box-statistique{
+    width: 30%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.khet{
+    width: 80%;
+    height: 5px;
+    background-color: aqua;
+}
+.da2ira{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 10px solid rgb(0, 255, 0);
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ness--khet{
+    height: 100%;
+    width: 80%;
+    background-color: blue;
+}
+.draw--mibyan{
+    width: 40%;
+    height: 80%;
+    
+}
+.body__dash{
+    background-color: black;
+    height: 100vh;
+}
+.rssma1{
+    display: flex;
+    justify-content: space-around;
+    rotate: 180deg;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+.rssma2{
+    display: flex;
+    rotate: 180deg;
+    align-items: center;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+.bara{
+    height: 50%;
+    width: 50px;
+    border: 1px solid white;
+    
+    bottom: 0;
+    background-color: rgb(9, 83, 83);
+}
+.bara2{
+    height: 2px;
+    width: 25%;
+    border: 1px solid white;
+    bottom: 0;
+    background-color: rgb(6, 76, 76);
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(222, 251, 0);
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+@media (max-width: 1392px){
     .title--home{
         font-size: 3rem;
     }
+    .center--card--teams{
+    position: relative;
+    height: 86%;
+    transform: rotate(0deg) ;
+    z-index: 4;
+    
+}
+.cart--number--1--teams{
+    transform:   translateY(0px);
+    z-index: 3;
+}
+.cart--number--2--teams{
+    transform:   translateY(0px);
+    z-index: 2;
+}
+.cart--number--4--teams{
+    transform:  translateY(0px);
+    z-index: 1;
 
+}
+.cart--number--5--teams{
+    transform:  translateY(0px);
+    z-index: 0;
+    
+}
+.main--cards--teams{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards__teams{
+    
+    padding-top: 30px;
+}
+.cart--number--1{
+    transform:   translateY(0px);    
+    z-index: 3;
+}
+.cart--number--2{
+    transform:   translateY(0px);
+    z-index: 2;
+}
+.cart--number--4{
+    transform:   translateY(0px);
+    z-index: 1;
+}
+.cart--number--5{
+    transform:   translateY(0px);
+    z-index: 0;
+}
+.main--cards--dashboard{
+    width: 100%;
+    height: 44rem;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.sidebar{
+    width: 100%;
+}
+.stars{
+    flex-direction: column;
+}
 }

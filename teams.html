@@ -5,55 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class="boddy__games">
     <header></header>
 
     <main class="main--cards--teams">
-        <div class="click--lrft switch" >
-            <img src="assets/screen/arrow_right.svg" alt="">
-        </div>
+
+        
         <section class="cards__teams">
             <div class="card_teams cart--number--1--teams">
-                <img id="img_team1"  src="assets/screen/game2.png" alt="">
+                <img id="img_team1"  src="assets/screen/team1.jpg" alt="">
                 <h2>LIGHT TEAM</h2>
                 <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
                 <button>View More</button>
             </div>
             <div class="card_teams cart--number--2--teams" >
-                <img id="img_team2" src="assets/screen/game3.jpg" alt="">
+                <img id="img_team2" src="assets/screen/team2.jpg" alt="">
                 <h2>LIGHT TEAM</h2>
                 <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
                 <button>View More</button>
             </div>
             <div class="card_teams center--card--teams">
-                <img id="img_team3" src="assets/screen/game1.jpg" alt="">
+                <img id="img_team3" src="assets/screen/team3.jpg" alt="">
                 <h2>LIGHT TEAM</h2>
                 <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
                 <button>View More</button>
             </div>
             <div class="card_teams cart--number--4--teams">
-                <img id="img_team4" src="assets/screen/game4.jpg" alt="">
+                <img id="img_team4" src="assets/screen/team4.jpg" alt="">
                 <h2>LIGHT TEAM</h2>
                 <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
                 <button>View More</button>
             </div>
             <div class="card_teams cart--number--5--teams">
-                <img id="img_team5" src="assets/screen/game3.webp" alt="">
+                <img id="img_team5" src="assets/screen/team5.jpg" alt="">
                 <h2>LIGHT TEAM</h2>
                 <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
                 <button>View More</button>
             </div>
         </section>
-        <div class="click--right switch">
-            <img src="assets/screen/arrow.svg" alt="">
+        <div>
+            <div class="click--right switch" style="display: flex;width: 100%;background-color: black;font-size: 2rem;text-align: center;gap: 5px;">
+                <div class="switch" id="swit1">1</div>
+                <div class="switch" id="swit2">2</div>
+                <div class="switch" id="swit3">3</div>
+                <div class="switch" id="swit4">4</div>
+                <div class="switch" id="swit5">5</div>
+            </div>
         </div>
+        
     </main>
     <footer></footer>
 </body>
 <script>
     
+
 const change_card1 = document.getElementById("img_team1")
     const change_card2 = document.getElementById("img_team2")
     const change_card3 = document.getElementById("img_team3")
@@ -121,6 +128,50 @@ const change_card1 = document.getElementById("img_team1")
         card3.style.zIndex = "7"
     })
 
+    const switch1 = document.getElementById("swit1")
+    const switch2 = document.getElementById("swit2")
+    const switch3 = document.getElementById("swit3")
+    const switch4 = document.getElementById("swit4")
+    const switch5 = document.getElementById("swit5")
+
+    switch1.addEventListener("click" , () =>{
+        card1.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+        
+    })
+    switch2.addEventListener("click" , () =>{
+        card2.style.zIndex = "7"
+        card1.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch3.addEventListener("click" , () =>{
+        card3.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card1.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch4.addEventListener("click" , () =>{
+        card4.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card1.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch5.addEventListener("click" , () =>{
+        card5.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card1.style.zIndex = "5"
+    })
+
+
     const bg_card1 = document.getElementById("img_team1")
     const bg_card2 = document.getElementById("img_team2")
     const bg_card3 = document.getElementById("img_team3")
@@ -141,5 +192,9 @@ const change_card1 = document.getElementById("img_team1")
     bg_card5.addEventListener("click", () => {
         img_team5.style.width = "0"
     })
+
+
+
+
 </script>
 </html>
