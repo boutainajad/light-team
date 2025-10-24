@@ -769,3 +769,9 @@ button{
     color: white;
 
 }
+.second_header{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    display: none;
+}
