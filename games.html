@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body class="boddy__games">
+    <header></header>
+    <main class="main--cards--games">
+        
+        <section class="cards__games">
+            <div class="card cart--number--1" >
+                <img  src="assets/screen/game5.jpg" alt="">
+                <h2>Fghost of tsushima</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button class="button">Start Game</button>
+            </div>
+            <div class="card cart--number--2" >
+                <img src="assets/screen/game3.jpg" alt="">
+                <h2>LEAGUE OF LEGEND</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>Start Game</button>
+            </div>
+            <div class="card center--card">
+                <img src="assets/screen/game1.jpg" alt="">
+                <h2>VALORANT</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>Start Game</button>
+            </div>
+            <div class="card cart--number--4">
+                <img src="assets/screen/game6.avif" alt="">
+                <h2>Fghost of Yotei</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>Start Game</button>
+            </div>
+            <div class="card cart--number--5">
+                <img src="assets/screen/game3.webp" alt="">
+                <h2>MINECRAFT</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>Start Game</button>
+            </div>
+        </section>
+        <div>
+            <div class="click--right switch" style="display: flex;width: 100%;background-color: black;font-size: 2rem;text-align: center;gap: 5px;">
+                <div class="switch" id="swit1">1</div>
+                <div class="switch" id="swit2">2</div>
+                <div class="switch" id="swit3">3</div>
+                <div class="switch" id="swit4">4</div>
+                <div class="switch" id="swit5">5</div>
+            </div>
+        </div>
+
+    </main>
+    <header></header>
+</body>
+<script src="animation.js"></script>
+<script>
+    const cardgame1 = document.querySelector(".cart--number--1")
+    const cardgame2 = document.querySelector(".cart--number--2")
+    const cardgame3 = document.querySelector(".center--card")
+    const cardgame4 = document.querySelector(".cart--number--4")
+    const cardgame5 = document.querySelector(".cart--number--5")
+
+    
+    const switchg1 = document.getElementById("swit1")
+    const switchg2 = document.getElementById("swit2")
+    const switchg3 = document.getElementById("swit3")
+    const switchg4 = document.getElementById("swit4")
+    const switchg5 = document.getElementById("swit5")
+
+    switchg1.addEventListener("click" , () =>{
+        cardgame1.style.zIndex = "7"
+        cardgame2.style.zIndex = "5"
+        cardgame3.style.zIndex = "5"
+        cardgame4.style.zIndex = "5"
+        cardgame5.style.zIndex = "5"
+        
+    })
+    switchg2.addEventListener("click" , () =>{
+        cardgame2.style.zIndex = "7"
+        cardgame1.style.zIndex = "5"
+        cardgame3.style.zIndex = "5"
+        cardgame4.style.zIndex = "5"
+        cardgame5.style.zIndex = "5"
+    })
+    switchg3.addEventListener("click" , () =>{
+        cardgame3.style.zIndex = "7"
+        cardgame2.style.zIndex = "5"
+        cardgame1.style.zIndex = "5"
+        cardgame4.style.zIndex = "5"
+        cardgame5.style.zIndex = "5"
+    })
+    switchg4.addEventListener("click" , () =>{
+        cardgame4.style.zIndex = "7"
+        cardgame2.style.zIndex = "5"
+        cardgame3.style.zIndex = "5"
+        cardgame1.style.zIndex = "5"
+        cardgame5.style.zIndex = "5"
+    })
+    switchg5.addEventListener("click" , () =>{
+        cardgame5.style.zIndex = "7"
+        cardgame2.style.zIndex = "5"
+        cardgame3.style.zIndex = "5"
+        cardgame4.style.zIndex = "5"
+        cardgame1.style.zIndex = "5"
+    })
+</script>
+</html>

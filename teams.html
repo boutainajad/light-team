@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="boddy__games">
+    <header></header>
+
+    <main class="main--cards--teams">
+
+        
+        <section class="cards__teams">
+            <div class="card_teams cart--number--1--teams">
+                <img id="img_team1"  src="assets/screen/team1.jpg" alt="">
+                <h2>LIGHT TEAM</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>View More</button>
+            </div>
+            <div class="card_teams cart--number--2--teams" >
+                <img id="img_team2" src="assets/screen/team2.jpg" alt="">
+                <h2>LIGHT TEAM</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>View More</button>
+            </div>
+            <div class="card_teams center--card--teams">
+                <img id="img_team3" src="assets/screen/team3.jpg" alt="">
+                <h2>LIGHT TEAM</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>View More</button>
+            </div>
+            <div class="card_teams cart--number--4--teams">
+                <img id="img_team4" src="assets/screen/team4.jpg" alt="">
+                <h2>LIGHT TEAM</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>View More</button>
+            </div>
+            <div class="card_teams cart--number--5--teams">
+                <img id="img_team5" src="assets/screen/team5.jpg" alt="">
+                <h2>LIGHT TEAM</h2>
+                <p>this gamee  for hdzjczc csdjbcsidh dcedhcbej cehcebc echbdc dczhbdcn d</p>
+                <button>View More</button>
+            </div>
+        </section>
+        <div>
+            <div class="click--right switch" style="display: flex;width: 100%;background-color: black;font-size: 2rem;text-align: center;gap: 5px;">
+                <div class="switch" id="swit1">1</div>
+                <div class="switch" id="swit2">2</div>
+                <div class="switch" id="swit3">3</div>
+                <div class="switch" id="swit4">4</div>
+                <div class="switch" id="swit5">5</div>
+            </div>
+        </div>
+        
+    </main>
+    <footer></footer>
+</body>
+<script>
+    
+
+const change_card1 = document.getElementById("img_team1")
+    const change_card2 = document.getElementById("img_team2")
+    const change_card3 = document.getElementById("img_team3")
+    const change_card4 = document.getElementById("img_team4")
+    const change_card5 = document.getElementById("img_team5")
+    change_card1.addEventListener("click", () => {
+        img_team1.style.zIndex = "0"
+        img_team2.style.zIndex = "5"
+        img_team3.style.zIndex = "5"
+        img_team4.style.zIndex = "5"
+        img_team5.style.zIndex = "5"
+    })
+    change_card2.addEventListener("click", () => {
+        img_team1.style.zIndex = "5"
+        img_team2.style.zIndex = "0"
+        img_team3.style.zIndex = "5"
+        img_team4.style.zIndex = "5"
+        img_team5.style.zIndex = "5"
+    })
+    change_card3.addEventListener("click", () => {
+        img_team1.style.zIndex = "5"
+        img_team2.style.zIndex = "5"
+        img_team3.style.zIndex = "0"
+        img_team4.style.zIndex = "5"
+        img_team5.style.zIndex = "5"
+    })
+    change_card4.addEventListener("click", () => {
+        img_team1.style.zIndex = "5"
+        img_team2.style.zIndex = "5"
+        img_team3.style.zIndex = "5"
+        img_team4.style.zIndex = "0"
+        img_team5.style.zIndex = "5"
+    })
+    change_card5.addEventListener("click", () => {
+        img_team1.style.zIndex = "5"
+        img_team2.style.zIndex = "5"
+        img_team3.style.zIndex = "5"
+        img_team4.style.zIndex = "5"
+        img_team5.style.zIndex = "0"
+    })
+
+    const card1 = document.querySelector(".cart--number--1--teams")
+    const card2 = document.querySelector(".cart--number--2--teams")
+    const card3 = document.querySelector(".center--card--teams")
+    const card4 = document.querySelector(".cart--number--4--teams")
+    const card5 = document.querySelector(".cart--number--5--teams")
+
+    card1.addEventListener("click" , () =>{
+        card1.style.animation = "rotate1 1s 1 linear"
+        card1.style.zIndex = "7"
+    })
+    card2.addEventListener("click" , () =>{
+        card2.style.animation = "rotat2 1s 1 linear"
+        card2.style.zIndex = "7"
+    })
+    card4.addEventListener("click" , () =>{
+        card4.style.animation = "rotat3 1s 1 linear"
+        card4.style.zIndex = "7"
+    })
+    card5.addEventListener("click" , () =>{
+        card5.style.animation = "rotat4 1s 1 linear"
+        card5.style.zIndex = "7"
+    })
+    card3.addEventListener("click" , () =>{
+        card3.style.zIndex = "7"
+    })
+
+    const switch1 = document.getElementById("swit1")
+    const switch2 = document.getElementById("swit2")
+    const switch3 = document.getElementById("swit3")
+    const switch4 = document.getElementById("swit4")
+    const switch5 = document.getElementById("swit5")
+
+    switch1.addEventListener("click" , () =>{
+        card1.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+        
+    })
+    switch2.addEventListener("click" , () =>{
+        card2.style.zIndex = "7"
+        card1.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch3.addEventListener("click" , () =>{
+        card3.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card1.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch4.addEventListener("click" , () =>{
+        card4.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card1.style.zIndex = "5"
+        card5.style.zIndex = "5"
+    })
+    switch5.addEventListener("click" , () =>{
+        card5.style.zIndex = "7"
+        card2.style.zIndex = "5"
+        card3.style.zIndex = "5"
+        card4.style.zIndex = "5"
+        card1.style.zIndex = "5"
+    })
+
+
+    const bg_card1 = document.getElementById("img_team1")
+    const bg_card2 = document.getElementById("img_team2")
+    const bg_card3 = document.getElementById("img_team3")
+    const bg_card4 = document.getElementById("img_team4")
+    const bg_card5 = document.getElementById("img_team5")
+    bg_card1.addEventListener("click", () => {
+        img_team1.style.width = "0"
+    })
+    bg_card2.addEventListener("click", () => {
+        img_team2.style.width = "0"
+    })
+    bg_card3.addEventListener("click", () => {
+        img_team3.style.width = "0"
+    })
+    bg_card4.addEventListener("click", () => {
+        img_team4.style.width = "0"
+    })
+    bg_card5.addEventListener("click", () => {
+        img_team5.style.width = "0"
+    })
+
+
+
+
+</script>
+</html>
