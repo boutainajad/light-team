@@ -161,9 +161,14 @@ a {
     /* text-decoration: none; */
 }
 
-
+.button_hamberger_close{
+    display: none;
+}
 
 @media screen and (max-width: 500px) {
+    .button_hamberger_close{
+    display: flex;
+}
     .body-form {
         font-size: 5px;
     }
