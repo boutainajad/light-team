@@ -120,7 +120,7 @@ button:hover {
 }
 
 .news_component {
-    height: 100vh;
+    height: 85rem;
     width: 100%;
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 .card-live {
-    margin-top: 5rem;
+    padding-top: 13rem;
     height: 50%;
     width: 100%;
     padding-left: 1.2rem;
@@ -315,5 +315,9 @@ a {
         box-sizing: border-box;
         width: 20rem;
     }
+    .news_component {
+    height: 166rem;
+    
+}
 
 }

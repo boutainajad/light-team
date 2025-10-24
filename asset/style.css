@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -129,7 +129,7 @@ a:hover {
 }
 
 .date {
-    font-family: "Metal Mania", system-ui;
+    font-family: 'Orbitron', sans-serif;
     font-size: 0.9rem;
     margin-top: 5px;
 }
@@ -148,7 +148,7 @@ a:hover {
 
 .vs {
     font-size: 4rem;
-    font-family: "Metal Mania", system-ui;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     color: #CAA8F5;
     padding: 0 10px;
@@ -227,7 +227,7 @@ footer li:hover {
 
 .info h2 {
     color: #FFFFFF;
-    font-family: "Metal Mania", system-ui;
+    font-family: 'Orbitron', sans-serif;
     margin-bottom: 15px;
 }
 
@@ -294,11 +294,19 @@ footer li:hover {
 .Cookies li {
     cursor: pointer;
 }
-
+.button_hamberger_ouvrir{
+    width: 40px ;
+    height: 40px;
+    background-color: white;
+    display: none;
+}
 @media only screen and (max-width: 768px) {
-    .top-nav {
-        flex-direction: column;
-        gap: 15px;
+    .button_hamberger_ouvrir{
+        display: flex;
+        margin: 2px;
+    }
+    .first_header {
+        display: flex;
     }
 
     #Search {
@@ -307,10 +315,7 @@ footer li:hover {
     }
 
     ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 20px 0;
+        display: none;
     }
 
     ul li {
@@ -387,13 +392,13 @@ footer li:hover {
 }
 .teachnologies {
             min-height: 100vh;
-            padding: 60px 20px;
+            padding: 100px 20px;
             background: linear-gradient(135deg, #161515 0%, #262D37 100%);
         }
 
         .section-title {
             text-align: center;
-            font-family: "Metal Mania", system-ui;
+            font-family: 'Orbitron', sans-serif;
             font-size: 3rem;
             color: #CAA8F5;
             margin-bottom: 50px;
@@ -439,7 +444,7 @@ footer li:hover {
             font-size: 2rem;
             color: #CAA8F5;
             margin: 15px 0;
-            font-family: "Metal Mania", system-ui;
+            font-family: 'Orbitron', sans-serif;
         }
 
         .carte p {
@@ -536,7 +541,7 @@ footer li:hover {
 
         .info h2 {
             color: #FFFFFF;
-            font-family: "Metal Mania", system-ui;
+            font-family: 'Orbitron', sans-serif;
             margin-bottom: 15px;
         }
 
@@ -600,7 +605,37 @@ footer li:hover {
             cursor: pointer;
         }
 
-        @media only screen and (max-width: 780px) {
+        @media only screen and (max-width: 1024px) {
+            .button_hamberger_ouvrir{
+        display: flex;
+    }
+            .cartes {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .button_hamberger_ouvrir{
+        display: flex;
+    }
+            .second_list{
+                display: block;
+            }
+            .top-nav {
+                
+                gap: 15px;
+            }
+
+            #Search {
+                width: 100%;
+                max-width: 300px;
+            }
+
  .top-nav {
         flex-direction: column;
         gap: 15px;
