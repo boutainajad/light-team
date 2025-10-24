@@ -717,9 +717,51 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 .question{
     width: 500px;
-    height: 200px;
+    height: 50px;
     background-color: black;
+    border: 1px solid white;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.question::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: flex;
+}
+.question:hover::after{
+    content: "i'm a programmer";
+    border-radius: 20px;
+    width: 500px;
+    color: black;
+    font-size: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: 1s;
+}
+.question:hover{
+    
+    height: 200px;
+}
+.box__title{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title_question{
+    font-size: 30px;
+    color: white;
+
 }
