@@ -636,19 +636,28 @@ footer li:hover {
                 max-width: 300px;
             }
 
-            ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                padding: 20px 0;
-            }
+ .top-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-            ul li {
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-            }
+    #Search {
+        width: 100%;
+        max-width: 300px;
+    }
 
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
             .section-title {
                 font-size: 2rem;
                 margin-bottom: 30px;
