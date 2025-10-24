@@ -153,6 +153,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
 }
 .main--cards--games{
     width: 100%;
@@ -227,7 +229,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    
 }
 .cards__teams{
     height: 34rem;
@@ -236,7 +238,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 18rem;
 }
 .card_teams{
     width: 20rem;
@@ -388,9 +390,11 @@ button{
     width: 3rem;
     height: 3rem;
     background-color: white;
-}
-.switch{
     border-radius: 100%;
+}
+.switch:hover{
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 
