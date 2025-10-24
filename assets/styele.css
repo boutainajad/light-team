@@ -192,15 +192,16 @@ a {
 }
 
 /* lives */
-.live-body{
+.live-body {
     margin: 0px;
+    background-color: black;
 }
 
 .card-live {
+    margin-top: 5rem;
     height: 50%;
-    background-color: black;
     width: 100%;
-    padding-left:1.2rem ;
+    padding-left: 1.2rem;
 }
 
 .main-live input {
@@ -213,19 +214,19 @@ a {
 .main-live button {
     color: black;
     width: 9rem;
-    height: 3rem;
     background: linear-gradient(to right, gray);
-    /* background-color: gray !important; */
 }
 
 .main-live iframe {
+    margin-left: 2%;
     box-shadow: 2px 2px 20px gray;
     border-radius: var(--border-radius);
-    width: 100%;
+    width: 90%;
     background-size: cover;
 
 }
-.main-live button:hover{
+
+.main-live button:hover {
     box-shadow: 2px 2px 2rem gray;
 }
 
@@ -236,44 +237,83 @@ a {
     color: aliceblue;
     width: 70%;
     margin: 1rem;
-    /* padding-bottom: 1rem; */
     font-size: 1.7rem;
 }
-.action-div span{
+
+.action-div span {
     margin-left: 1rem;
 
 }
-.input{
+
+.input {
     width: 42%;
 }
 
+/* container div */
+.container-article {
+    height: 100%;
+    width: 100%;
+}
+
+/* container des slide article */
+.articles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* lives direct */
+.article-lives {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 40%;
+    height: fit-content;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    padding: 2%;
+    box-shadow: 2px 2px 20px gray;
+}
 
 @media screen and (max-width: 768px) {
     .body-form {
         font-size: 5px;
     }
-    .action-button{
+
+    .action-button {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-        .action-div {
-            margin-left: 2rem;
 
-           
-        
-           
-        }
-              .main-live button{
+    .action-div {
 
-                height: 2.1rem;
-              }
-    /* .input .button{
+        margin-left: 2rem;
+
+
+
+
+    }
+
+    .main-live button {
+
+        height: 2.1rem;
+    }
+
+    .input {
         display: flex;
-        width: 10rem;
-    } */
-.input {
-    display: flex;
-    width: 100%;
-   
-}}
+        width: 90%;
+
+    }
+
+
+    /* childs  */
+    .article-lives {
+        height: 100%;
+        box-sizing: border-box;
+        width: 20rem;
+    }
+
+}
